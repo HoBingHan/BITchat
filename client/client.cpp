@@ -24,7 +24,7 @@ client::client(QWidget *parent)
     shadow->setBlurRadius(30);
     ui->backgroundLabel->setGraphicsEffect(shadow);
 
-    tcpSocket = new QTcpSocket(this);
+    tcpSocket = new QTcpSocket();
 }
 
 client::~client()
@@ -61,9 +61,9 @@ void client::on_loginPushButton_clicked()
         QString ip = tcpSocket->peerAddress().toString().section(":", 3, 3);
         int port = tcpSocket->peerPort();
 
-//        // 输出[ip : port]
-//        QString str = QString("ConnectingToHost...[%1 : %2]").arg(ip).arg(port);
-//        qDebug() << str;
+        // 输出[ip : port]
+        QString str = QString("TryConnectToHost...[%1 : %2]").arg(ip).arg(port);
+        qDebug() << str;
 
         // 30秒内等待套接字成功连接到服务器，成功返回true，超时或者连接失败返回false
         if(!tcpSocket->waitForConnected(30000))

@@ -17,13 +17,13 @@ class home : public QWidget
 public:
     explicit home(QWidget *parent = nullptr);
     ~home();
-    QTimer *timer;
-    void updateFriendList();
 
 protected:
     void closeEvent(QCloseEvent *event);
 
 private slots:
+    void updateFriendList();
+
     void on_sendMessageToolButton_clicked();
 
     void on_logoutToolButton_clicked();
@@ -39,6 +39,7 @@ private slots:
 private:
     Ui::home *ui;
     QTcpSocket *tcpSocket;
+    QTimer *timer;
 };
 
 #endif // HOME_H

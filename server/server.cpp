@@ -11,13 +11,13 @@ server::server(QWidget *parent)
 {
     ui->setupUi(this);
 
-    tcpServer = new QTcpServer(this);
+    tcpServer = new QTcpServer();
 
     ui->listWidget->clear();
     ui->listWidget->insertItem(0, "当前没有在线用户");
 
     for (int i = 0; i < N; i++)
-        tcpSocket[i] = new QTcpSocket(this);
+        tcpSocket[i] = new QTcpSocket();
 
     tcpServer->listen(QHostAddress::Any, 8888);
 

@@ -8,7 +8,7 @@
 #include "receivefile.h"
 #include <qinputdialog.h>
 
-QString hostIP = "127.0.0.1";
+QString hostIP = " 10.198.96.17";
 int hostPort = 8888;
 
 extern userInfo user;
@@ -68,6 +68,8 @@ void home::updateFriendList()
         ui->startChatToolButton->setEnabled(true);
         ui->sendMessageToolButton->setEnabled(true);
     }
+
+    qDebug() << friendNameList.length();
 
     tcpSocket = new QTcpSocket();
     tcpSocket->abort();
