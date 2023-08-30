@@ -1,0 +1,40 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icon/blue.png</file>
+        <file>icon/exit.png</file>
+        <file>icon/girl1.png</file>
+        <file>icon/sky.jpg</file>
+        <file>icon/Cancel.512.png</file>
+        <file>icon/Send.512.png</file>
+        <file>icon/Downloads-Folder.512.png</file>
+        <file>icon/sendfile icon.512.png</file>
+        <file>icon/paxson-woelber-nv7WX42LKjU-unsplash.jpg</file>
+        <file>icon/chat start.512.png</file>
+        <file>icon/Refresh.512.png</file>
+        <file>icon/add_user.512.png</file>
+        <file>icon/chat.png</file>
+        <file>icon/Delete-user.512.png</file>
+        <file>icon/Exit.512.png</file>
+        <file>icon/Back.512.png</file>
+        <file>icon/background.jpg</file>
+        <file>icon/check pwd.512.png</file>
+        <file>icon/further.jpg</file>
+        <file>icon/leandra-rieger-31p65jYy7gE-unsplash.jpg</file>
+        <file>icon/login.png</file>
+        <file>icon/meiying-ng-OrwkD-iWgqg-unsplash.jpg</file>
+        <file>icon/pwd.512.png</file>
+        <file>icon/receivefile.512.png</file>
+        <file>icon/register yes.512.png</file>
+        <file>icon/register.512.png</file>
+        <file>icon/select file.512.png</file>
+        <file>icon/selectfile.png</file>
+        <file>icon/selectfile2.png</file>
+        <file>icon/send file.512.png</file>
+        <file>icon/send512.png</file>
+        <file>icon/sendfile.png</file>
+        <file>icon/sendfile2.svg</file>
+        <file>icon/skyblue.jpg</file>
+        <file>icon/snow.jpg</file>
+        <file>icon/username.png</file>
+    </qresource>
+</RCC>

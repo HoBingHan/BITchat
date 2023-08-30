@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>home</class>
+ <widget class="QWidget" name="home">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>500</width>
+    <height>450</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>500</width>
+    <height>450</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="backgroundLabel">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>500</width>
+     <height>450</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>500</width>
+     <height>450</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>500</width>
+     <height>450</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/icon/paxson-woelber-nv7WX42LKjU-unsplash.jpg);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="helloLabel">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>201</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 20pt &quot;Arial Black&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Hello,</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="friendListLabel">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>50</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 50 8pt &quot;Arial Black&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Friend List</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="listWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>90</y>
+     <width>321</width>
+     <height>291</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 italic 12pt &quot;Comic Sans MS&quot;;
+background-color: rgba(255, 255, 255,0.7);</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="friendNamelineEdit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>400</y>
+     <width>221</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>221</width>
+     <height>31</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>221</width>
+     <height>31</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(247, 247, 247);
+border:1px groove gray;border-radius:
+7px;padding:2px 4px;
+font: 10pt &quot;Candara&quot;;
+font: 75 italic 12pt &quot;Comic Sans MS&quot;;
+background-color: rgba(255, 255, 255,0.7);</string>
+   </property>
+   <property name="placeholderText">
+    <string>Enter the name to chat</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="sendMessageToolButton">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>400</y>
+     <width>38</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>38</width>
+     <height>45</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>38</width>
+     <height>45</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#toolButton:hover
+{
+	border-style:none;
+	font: 12pt &quot;华文隶书&quot;;
+	color: rgba(0, 0, 0, 1);
+}
+
+#toolButton:!hover
+{
+	border-style:none;
+	font: 75 12pt &quot;华文隶书&quot;;
+	color: rgba(0, 0, 0, 0);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>聊天</string>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/icon/chat start.512.png</normaloff>:/icon/chat start.512.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="refreshToolButton">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>400</y>
+     <width>38</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>38</width>
+     <height>45</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>38</width>
+     <height>45</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#toolButton_2:hover
+{
+	border-style:none;
+	font: 12pt &quot;华文隶书&quot;;
+	color: rgba(0, 0, 0, 1);
+}
+
+#toolButton_2:!hover
+{
+	border-style:none;
+	font: 75 12pt &quot;华文隶书&quot;;
+	color: rgba(0, 0, 0, 0);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>刷新</string>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/icon/Refresh.512.png</normaloff>:/icon/Refresh.512.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="addFriendToolButton">
+   <property name="geometry">
+    <rect>
+     <x>382</x>
+     <y>92</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>60</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>60</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#toolButton_3:hover
+{
+	border-style:none;
+	font: 12pt &quot;华文隶书&quot;;
+	color: rgba(0, 0, 0, 1);
+}
+
+#toolButton_3:!hover
+{
+	border-style:none;
+	font: 75 12pt &quot;华文隶书&quot;;
+	color: rgba(0, 0, 0, 0);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>加好友</string>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/icon/add_user.512.png</normaloff>:/icon/add_user.512.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="deleteFriendToolButton">
+   <property name="geometry">
+    <rect>
+     <x>382</x>
+     <y>204</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>60</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>60</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#toolButton_4:hover
+{
+	border-style:none;
+	font: 12pt &quot;华文隶书&quot;;
+	color: rgba(0, 0, 0, 1);
+}
+
+#toolButton_4:!hover
+{
+	border-style:none;
+	font: 75 12pt &quot;华文隶书&quot;;
+	color: rgba(0, 0, 0, 0);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>删好友</string>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/icon/Delete-user.512.png</normaloff>:/icon/Delete-user.512.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="startChatToolButton">
+   <property name="geometry">
+    <rect>
+     <x>382</x>
+     <y>319</y>
+     <width>70</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>70</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>70</width>
+     <height>53</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#toolButton_5:hover
+{
+	border-style:none;
+	font: 12pt &quot;华文隶书&quot;;
+	color: rgba(0, 0, 0, 1);
+}
+
+#toolButton_5:!hover
+{
+	border-style:none;
+	font: 75 12pt &quot;华文隶书&quot;;
+	color: rgba(0, 0, 0, 0);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>开始聊天</string>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/icon/chat.png</normaloff>:/icon/chat.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="logoutToolButton">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>400</y>
+     <width>50</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>50</width>
+     <height>50</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>50</width>
+     <height>50</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#toolButton_6:hover
+{
+	border-style:none;
+	font: 12pt &quot;华文隶书&quot;;
+	color: rgba(0, 0, 0, 1);
+}
+
+#toolButton_6:!hover
+{
+	border-style:none;
+	font: 75 12pt &quot;华文隶书&quot;;
+	color: rgba(0, 0, 0, 0);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/icon/Exit.512.png</normaloff>:/icon/Exit.512.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>
